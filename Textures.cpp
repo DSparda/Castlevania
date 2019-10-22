@@ -40,8 +40,8 @@ LPDIRECT3DTEXTURE9 CTextures::Get(unsigned int id)
 	return textures[id];
 }
 
-CGame::CGame() {}
-CGame::~CGame() {}
+CTextures::CTextures() {}
+CTextures::~CTextures() {}
 
 CTextures* CTextures::GetInstance()
 {

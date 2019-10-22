@@ -24,6 +24,5 @@ public:
 
 	static CGame* GetInstance();
 
-	CGame();
 	~CGame();
 };
