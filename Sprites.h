@@ -66,7 +66,7 @@ typedef CAnimation* LPANIMATION;
 
 class CAnimations
 {
-	static CAnimation* __instance;
+	static CAnimations* __instance;
 
 	unordered_map <int, LPANIMATION> animations;
 

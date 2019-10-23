@@ -90,7 +90,7 @@ void CAnimation::Render(float x, float y)
 	frames[currentFrame]->GetSprite()->Draw(x, y);
 }
 
-CAnimations* CAnimation::_instance = NULL;
+CAnimations* CAnimations::__instance = NULL;
 
 void CAnimations::Add(int id, LPANIMATION ani)
 {
@@ -102,7 +102,7 @@ LPANIMATION CAnimations::Get(int id)
 	return animations[id];
 }
 
-CAnimations* CAnimation::GetInstance()
+CAnimations* CAnimations::GetInstance()
 {
 	if (__instance == NULL) __instance = new CAnimations();
 	return __instance;
